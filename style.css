@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.maincontainer {
+    height: 100vh;
+    width: 100%;
+    background: rgb(251, 251, 255);
+    background: linear-gradient(0deg, rgba(251, 251, 255, 1) 0%, rgba(230, 230, 255, 1) 100%);
+}
+
+.navbar {
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 50px;
+}
+
+em {
+    font-style: normal;
+}
+
+.nav1 {
+    /* width: 25%; */
+    display: flex;
+    align-items: center;
+}
+
+.nav1 i {
+    font-size: 1.5em;
+}
+
+.nav2 {
+    /* width: 40%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav3 {
+    /* width: 30%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav2 ul {
+    list-style: none;
+    display: flex;
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.nav2 ul li {
+    margin-right: 5px;
+}
+
+.nav3 button {
+    border: none;
+    margin-left: 15px;
+    background-color: transparent;
+    font-weight: 450;
+}
+
+.nav3 button:first-child {
+    width: 60px;
+    border: none;
+}
+
+#black-btn {
+    height: 40px;
+    width: 150px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.nav3 button em {
+    font-weight: 300;
+}
+
+.bars {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    display: none;
+}
+
+.bars i {
+    font-size: 1.2em;
+}
+
+.l1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-inline: 50px;
+}
+
+.r1 p {
+    font-size: 1.5em;
+}
+
+.r1 p1 {
+    font-size: .7em;
+    color: rgb(44, 43, 43);
+}
+
+.herosection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding-inline: 50px;
+}
+
+.left h1 {
+    font-size: 12em;
+    font-family: "DM Sans", sans-serif;
+    padding-left: 30px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.sec1 {
+    padding-left: 30px;
+}
+
+.left span {
+    display: flex;
+}
+
+.sec1 p {
+    font-size: 0.8em;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.icon {
+    height: 30px;
+    width: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+.right {
+    display: flex;
+}
+
+.right img {
+    padding-left: 80px;
+}
+
+.logosec {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 75px;
+}
+
+.logosec img {
+    width: 7%;
+    height: 7%
+}
+
+.navbar2 {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(118, 114, 245);
+}
+
+#star1 {
+    font-size: 1.5em;
+}
+
+#star2 {
+    font-size: 1.5em;
+}
+
+#star3 {
+    font-size: 1.5em;
+}
+
+#star4 {
+    font-size: 1.5em;
+}
+
+.navbar2 h4 {
+    font-size: 1.1em;
+}
+
+@media (max-width:768px) {
+    .herosection {
+        flex-direction: column;
+    }
+
+    .navbar {
+        padding-inline: 20px;
+        padding-top: 20px;
+    }
+
+    .nav2 {
+        display: none;
+    }
+
+    .nav3 button:first-child {
+        display: none;
+    }
+
+    .nav3 button:nth-child(2) {
+        display: none;
+    }
+
+    .bars {
+        display: inline;
+        display: flex;
+    }
+
+    .left h1 {
+        font-size: 10em;
+    }
+
+    .right {
+        margin-top: 50px;
+    }
+
+    .right img {
+        width: 80%;
+    }
+
+    .right {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logosec img {
+        width: 12%;
+    }
+
+    .navbar2 h4{
+        font-size: .9em;
+    }
+    #star1 {
+        font-size: 1em;
+    }
+    
+    #star2 {
+        font-size: 1m;
+    }
+    
+    #star3 {
+        font-size: 1em;
+    }
+    
+    #star4 {
+        font-size: 1em;
+    }
+}
